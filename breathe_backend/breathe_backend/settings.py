@@ -29,11 +29,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'ingest',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -87,4 +89,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
