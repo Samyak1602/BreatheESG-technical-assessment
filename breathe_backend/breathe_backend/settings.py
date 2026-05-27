@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'ingest',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +63,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'breathe_backend.wsgi.application'
 
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres://postgres:postgres@127.0.0.1:5432/breathe_esg')
+    'default': env.db('DATABASE_URL', default='postgres://postgres:postgres@127.0.0.1:5433/breathe_esg')
 }
 
 AUTH_PASSWORD_VALIDATORS = [
