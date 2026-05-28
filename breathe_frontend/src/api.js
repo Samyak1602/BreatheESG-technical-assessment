@@ -1,4 +1,5 @@
-const BASE = '/api';
+const BASE = import.meta.env.VITE_API_URL || 'https://breatheesg-technical-assessment-production.up.railway.app/api';
+
 
 async function req(url, m = 'GET', body = null) {
   const opt = {
