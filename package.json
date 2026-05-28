@@ -1,8 +1,0 @@
-{
-  "name": "breathe-esg-root",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {
-    "build": "cd breathe_frontend && npm install && npm run build"
-  }
-}
